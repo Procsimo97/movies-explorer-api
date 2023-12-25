@@ -9,8 +9,7 @@ const Error403 = require('../errors/Error403');
 
 // получает все сохраненные фильмы
 module.exports.findAllMovies = (req, res, next) => {
-  const { owner } = req.user._id;
-  Movie.find({ owner })
+  Movie.find({})
     .populate('owner')
     .then((movie) => res.send(movie))
     .catch(next);
