@@ -19,7 +19,7 @@ const getUserInfoJoiSchema = {
 
 const idMovieJoiSchema = {
   params: Joi.object().keys({
-    _id: Joi.string().hex().length(24),
+    id: Joi.string().hex().length(24),
   }),
 };
 

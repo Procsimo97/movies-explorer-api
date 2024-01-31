@@ -70,7 +70,6 @@ module.exports.deleteMovie = (req, res, next) => {
       if (movie.owner.toString() !== req.user._id) {
         throw new Error403('Удалять фильмы может только владелец');
       }
-
       return Movie.deleteOne(movie)
         .then(() => res.send({ message: 'Фильм успещно удален' }))
         .catch(next);
