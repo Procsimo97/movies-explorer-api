@@ -21,7 +21,7 @@
 ## Технолологический стек
 1. Node.js
 2. Express.js
-3. avaScript
+3. JavaScript
 
 ## Ссылки
 
